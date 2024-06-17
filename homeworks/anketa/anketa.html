@@ -10,10 +10,10 @@
         const name = prompt ("Введите имя", "Александр");
         const midName = prompt ("Введите отчество", "Родионович");
         const surName = prompt ("Введите фамилию", "Бородач");
-        let isMan = confirm ("Ваш пол - мужской?");
-        let gender = isMan ? "мужской" : "женский";
+        let male = confirm ("Ваш пол - мужской?");
+        let gender = male ? "мужской" : "женский";
         let age = parseInt (prompt("Возраст в годах", 5));
-        let pension = (isMan && age >=63) || (isMan && age >=58) ? "да" : "нет";
+        let pension = (male && age >=63) || (male && age >=58) ? "да" : "нет";
         
         alert ("ФИО: " + name + " " + midName + " " + surName +  " " + "\n" +
                 "Возраст в годах: " + age + "\n" +
